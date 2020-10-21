@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body {
+    margin: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    background-image: url(../img/banner-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    color: black;
+}
+
+.header h1 {
+    font-size: 80px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+
+/*Ejemplo de estilos por clase*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    /*padding: 0(distancia arriba) 20% (derecha) 0(abajo) 20%(izquierda);*/
+    padding: 20px 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: #003c42;
+    color: white;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#h1 {
+    font-size: 80px;
+}
+
+#h2 {
+    font-size: 40px;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+
+/*Three columns Gallery*/
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    /*desc es una etiqueta*/
+    padding: 10px;
+    text-align: center;
+}
+
+#text-cent {
+    text text-align: center;
+}
+
+#section-3img {
+    padding: 10px 20px 50px 20px;
+    width: 40%;
+}
+
+
+/*Four columns*/
+
+.four-column {
+    padding: 40px 5px;
+    float: left;
+    width: 25%;
+    background-color: #28ECA5;
+}
+
+.four-column img {
+    width: 100px;
+    padding: 25%;
+}
+
+
+/*Footer*/
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    color: #868e96;
+    background-color: #212529;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column,
+    .three-column,
+    .four-column {
+        width: 100%;
+    }
+    .header {
+        background-image: url(../img/header4.jpg);
+    }
+}

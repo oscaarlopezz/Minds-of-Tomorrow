@@ -92,7 +92,7 @@
     font-size: 20px;
 }
 
-.colorfondo-v {
+.colordefondo-v {
     background-color: #28ECA5;
 }
 
@@ -139,11 +139,13 @@
     /*Footer*/
 }
 
-.two-columnfoot p {
-    padding: 20%, 25%, 20px, 20px;
+.two-columnfoot {
+    padding: 20px;
+    display: 20px;
+    padding-top: 2.4%;
+    padding-right: 25%;
     float: left;
     width: 50%;
-    display: 20px;
 }
 
 .footer {
@@ -163,19 +165,22 @@
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:600px) {
-    .one-column,
-    .one-column2,
     .two-column,
     .three-column {
         width: 100%;
     }
     .four-column {
         width: 50%;
+        padding: 10px;
+    }
+    .four-column2 img {
+        width: 50%;
     }
     .two-columnfoot {
         width: 100%;
-        font-size: 2.5vw;
+        font-size: 4vw;
         padding-top: 6%;
+        padding-left: 12%;
     }
     .four-columnfoot {
         width: 50%;
